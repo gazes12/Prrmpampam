@@ -107,7 +107,50 @@
 }
 
 /*==============================================*/
+@media (max-width: 991.98px) {
+  /*HEADER*/
+  .header__container {
+    height: 100px;
+    gap: 25px;
+  }
+
+  /*=====================*/
+  /*Логотип*/
+  .logo-header__icon {
+    width: 60px;
+  }
+
+  .logo-header__text {
+    width: 130px;
+  }
+
+  .header__menu__item a {
+    font-size: 15.5px;
+  }
+
+  /*=======================*/
+  /*Кнопки*/
+  .buttons-header {
+    gap: 16px;
+  }
+
+  .buttons-header__login {
+    padding: 4px 28px;
+  }
+
+  .buttons-header__register {
+    padding: 4px 28px;
+  }
+}
 @media (max-width: 767.98px) {
+  /*Логотип*/
+  .logo-header {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+
+  /*================================*/
   /*Бургер*/
   .burger {
     cursor: pointer;
