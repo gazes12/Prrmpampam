@@ -1,0 +1,106 @@
+@charset "UTF-8";
+.header {
+  background: #3A1F4F;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 120px;
+  gap: 45px;
+}
+
+/*Логотип*/
+.logo-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.logo-header__icon {
+  width: 80px;
+  -webkit-animation: rotateIcon 4s infinite alternate;
+          animation: rotateIcon 4s infinite alternate;
+}
+.logo-header__icon:hover {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.logo-header__text {
+  width: 150px;
+}
+
+@-webkit-keyframes rotateIcon {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateIcon {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*==============================================*/
+/*Меню*/
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.header__menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.header__menu__item a {
+  font-size: 18px;
+  color: #A537FC;
+}
+
+/*==============================================*/
+/*Кнопки*/
+.buttons-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+}
+
+.buttons-header__login {
+  border: 1px solid #A537FC;
+  border-radius: 2px;
+  padding: 6px 34px;
+  color: #A537FC;
+}
+
+.buttons-header__register {
+  color: #fff;
+  background: #A537FC;
+  padding: 6px 34px;
+  border-radius: 2px;
+}
+
+/*==============================================*/
