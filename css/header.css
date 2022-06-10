@@ -80,6 +80,23 @@
 .header__menu__item a {
   font-size: 18px;
   color: #fff;
+  position: relative;
+  padding-bottom: 5px;
+}
+.header__menu__item a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  border-radius: 100%;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: width 0.3s linear;
+  transition: width 0.3s linear;
+}
+.header__menu__item a:hover::after {
+  width: 100%;
 }
 
 /*==============================================*/
