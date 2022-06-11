@@ -1,0 +1,46 @@
+/*Шапка*/
+.header {
+    background: #3A1F4F;
+}
+/*==============================================*/
+/*Меню*/
+.header__menu__item {
+    a{
+        color: #fff;
+        &::after{
+            background: #fff;
+        }
+    }
+}
+/*==============================================*/
+
+/*Кнопки*/
+.buttons-header__login {
+    border: 1px solid #A537FC;
+    color: #A537FC;
+    &:hover{
+        box-shadow: -2px -2px 100px -1px rgba(165, 55, 252, 0.65);
+    }
+}
+
+.buttons-header__register {
+    color: #fff;
+    background: #A537FC;
+    &:hover{
+        box-shadow: -2px -2px 100px -1px rgba(165, 55, 252, 0.65);
+    }
+}
+/*==============================================*/
+
+/*SWITCHER*/
+.theme {
+}
+
+.change-theme[data-theme="dark"]{
+    display: none;
+}
+
+.change-theme[data-theme="light"]{
+    display: block;
+}
+/*=================================================*/

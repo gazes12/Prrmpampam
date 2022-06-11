@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+@import url('../css/all.css');
+@import url('../css/reset.css');
+@import url('../css/header.css');
+@import url('../css/footer.css');
+
+[class*='__container']{
+    max-width: 1000px + 30px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+body{
+    background: #12061C;
+    font-family: 'Inter', sans-serif;
+}

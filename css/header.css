@@ -1,6 +1,8 @@
 @charset "UTF-8";
 .header {
   background: #3A1F4F;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .header__container {
@@ -82,18 +84,19 @@
   color: #fff;
   position: relative;
   padding-bottom: 5px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 .header__menu__item a::after {
   content: "";
   width: 0%;
   height: 2px;
-  border-radius: 100%;
   background: #fff;
   position: absolute;
   bottom: 0;
   left: 0;
-  -webkit-transition: width 0.3s linear;
-  transition: width 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 .header__menu__item a:hover::after {
   width: 100%;
@@ -114,10 +117,8 @@
   border-radius: 2px;
   padding: 6px 34px;
   color: #A537FC;
-  -webkit-transition: -webkit-box-shadow 0.3s ease-out;
-  transition: -webkit-box-shadow 0.3s ease-out;
-  transition: box-shadow 0.3s ease-out;
-  transition: box-shadow 0.3s ease-out, -webkit-box-shadow 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 .buttons-header__login:hover {
   -webkit-box-shadow: -2px -2px 100px -1px rgba(165, 55, 252, 0.65);
@@ -129,10 +130,8 @@
   background: #A537FC;
   padding: 6px 34px;
   border-radius: 2px;
-  -webkit-transition: -webkit-box-shadow 0.3s ease-out;
-  transition: -webkit-box-shadow 0.3s ease-out;
-  transition: box-shadow 0.3s ease-out;
-  transition: box-shadow 0.3s ease-out, -webkit-box-shadow 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 .buttons-header__register:hover {
   -webkit-box-shadow: -2px -2px 100px -1px rgba(165, 55, 252, 0.65);
@@ -140,7 +139,28 @@
 }
 
 /*==============================================*/
-@media (max-width: 991.98px) {
+/*SWITCHER*/
+.theme {
+  z-index: 100;
+}
+
+.change-theme {
+  font-size: 40px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.change-theme[data-theme=dark] {
+  color: #000;
+}
+
+.change-theme[data-theme=light] {
+  color: #fff;
+}
+
+/*=================================================*/
+@media (max-width: 991px) {
   /*HEADER*/
   .header__container {
     height: 100px;
@@ -175,7 +195,7 @@
     padding: 4px 28px;
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 815px) {
   /*HEADER*/
   .header__container {
     height: 80px;
@@ -284,7 +304,7 @@
 
   /*=======================*/
 }
-@media (max-width: 501px) {
+@media (max-width: 555px) {
   /*HEADER*/
   .header__container {
     height: 70px;
@@ -334,4 +354,10 @@
   }
 
   /*=======================*/
+  /*change-theme*/
+  .change-theme {
+    font-size: 35px;
+  }
+
+  /*============================*/
 }

@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/*Шапка*/
+.header {
+  background: #3A1F4F;
+}
+
+/*==============================================*/
+/*Меню*/
+.header__menu__item a {
+  color: #fff;
+}
+.header__menu__item a::after {
+  background: #fff;
+}
+
+/*==============================================*/
+/*Кнопки*/
+.buttons-header__login {
+  border: 1px solid #A537FC;
+  color: #A537FC;
+}
+.buttons-header__login:hover {
+  -webkit-box-shadow: -2px -2px 100px -1px rgba(165, 55, 252, 0.65);
+          box-shadow: -2px -2px 100px -1px rgba(165, 55, 252, 0.65);
+}
+
+.buttons-header__register {
+  color: #fff;
+  background: #A537FC;
+}
+.buttons-header__register:hover {
+  -webkit-box-shadow: -2px -2px 100px -1px rgba(165, 55, 252, 0.65);
+          box-shadow: -2px -2px 100px -1px rgba(165, 55, 252, 0.65);
+}
+
+/*==============================================*/
+/*SWITCHER*/
+.change-theme[data-theme=dark] {
+  display: none;
+}
+
+.change-theme[data-theme=light] {
+  display: block;
+}
+
+/*=================================================*/
