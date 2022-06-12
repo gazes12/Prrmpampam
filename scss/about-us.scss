@@ -1,5 +1,6 @@
 .main {
     background: #71607E;
+    padding-top: 130px;
 }
 
 .about-us {
@@ -65,6 +66,18 @@
 }
 .report-problem__name {
     font-weight: 400;
+}
+
+.report-problem__icon{
+    font-size: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 1s ease;
+    display: block;
+    &:hover{
+        transform: rotate(360deg) scale(1.5);
+        color: purple;
+    }
 }
 /*=====================================*/
 

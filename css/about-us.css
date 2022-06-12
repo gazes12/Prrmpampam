@@ -74,6 +74,20 @@
   font-weight: 400;
 }
 
+.report-problem__icon {
+  font-size: 25px;
+  margin-top: 10px;
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  display: block;
+}
+.report-problem__icon:hover {
+  -webkit-transform: rotate(360deg) scale(1.5);
+          transform: rotate(360deg) scale(1.5);
+  color: purple;
+}
+
 /*=====================================*/
 @media (max-width: 815px) {
   .about-us-top__title {

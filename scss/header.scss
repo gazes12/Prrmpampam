@@ -1,6 +1,10 @@
 .header {
     background: #3A1F4F;
     transition: all .3s ease-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .header__container{
@@ -219,7 +223,7 @@
         display: flex;
         justify-content: center;
         padding-top: 140px;
-
+        z-index: 99;
         transform: translateY(-100%);
         transition: all .3s linear;
 
