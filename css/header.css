@@ -260,6 +260,7 @@
         -ms-flex-pack: center;
             justify-content: center;
     padding-top: 140px;
+    z-index: 99;
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%);
     -webkit-transition: all 0.3s linear;
