@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .main {
   background: #71607E;
-  padding-top: 130px;
+  padding: 130px 0px 50px 0px;
 }
 
 .about-us {
@@ -10,7 +10,6 @@
   text-align: center;
   max-width: 870px;
   margin: 0 auto;
-  padding: 43px 0px 25px 0px;
 }
 
 /*Вверхняя часть*/
@@ -47,7 +46,7 @@
 .about-us-bottom {
   background: #3A1F4F;
   border-radius: 4px;
-  padding: 20px 30px;
+  padding: 30px 40px;
   margin-top: 20px;
 }
 
@@ -63,17 +62,22 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   margin-top: 15px;
   gap: 20px;
+}
+
+.report-problem__item p {
+  white-space: nowrap;
 }
 
 .report-problem__name {
   font-weight: 400;
 }
 
+/*Иконка дискорда*/
 .report-problem__icon {
   font-size: 25px;
   margin-top: 10px;
@@ -106,11 +110,16 @@
     font-size: 15px;
   }
 
-  .report-problem__item {
-    font-size: 14px;
+  .report-problem__items {
+    gap: 15px;
   }
 }
 @media (max-width: 555px) {
+  .main {
+    background: #71607E;
+    padding-top: 100px;
+  }
+
   .about-us-top__title {
     font-size: 20px;
   }
@@ -127,7 +136,15 @@
     font-size: 14px;
   }
 
-  .report-problem__item {
-    font-size: 13px;
+  .report-problem__items {
+    gap: 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 20px;
   }
 }

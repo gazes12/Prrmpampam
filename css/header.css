@@ -7,6 +7,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 100;
 }
 
 .header__container {
@@ -66,7 +67,7 @@
 }
 /*==============================================*/
 /*Меню*/
-.header__menu {
+.menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,7 +76,7 @@
           flex: 1 1 auto;
 }
 
-.header__menu__list {
+.menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,7 +84,7 @@
   text-align: center;
 }
 
-.header__menu__item a {
+.menu__item a {
   font-size: 18px;
   color: #fff;
   position: relative;
@@ -91,7 +92,7 @@
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-.header__menu__item a::after {
+.menu__item a::after {
   content: "";
   width: 0%;
   height: 2px;
@@ -102,7 +103,7 @@
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.header__menu__item a:hover::after {
+.menu__item a:hover::after {
   width: 100%;
 }
 
@@ -250,7 +251,7 @@
 
   /*==================================*/
   /*MENU*/
-  .header__menu {
+  .menu {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -270,12 +271,12 @@
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
   }
-  .header__menu.active {
+  .menu.active {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
   }
 
-  .header__menu__list {
+  .menu__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -286,7 +287,7 @@
     row-gap: 50px;
   }
 
-  .header__menu__item a {
+  .menu__item a {
     font-size: 45px;
     color: #A537FC;
   }
@@ -341,7 +342,7 @@
 
   /*=======================*/
   /*MENU*/
-  .header__menu__item a {
+  .menu__item a {
     font-size: 35px;
     color: #A537FC;
   }
