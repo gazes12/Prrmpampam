@@ -4,7 +4,7 @@ body{
 
 /*Шапка*/
 .header {
-    background: #EBD1FF;
+    background: #F0B3EF;
 }
 
 /*==============================================*/
@@ -21,24 +21,6 @@ body{
         &::after{
             background: #A537FC;
         }
-    }
-}
-/*==============================================*/
-
-/*Кнопки*/
-.buttons-header__login {
-    border: 1px solid #A537FC;
-    color: #A537FC;
-    &:hover{
-        box-shadow: -2px -2px 100px -1px rgba(165, 55, 252, 0.65);
-    }
-}
-
-.buttons-header__register {
-    color: #fff;
-    background: #A537FC;
-    &:hover{
-        box-shadow: -2px -2px 100px -1px rgba(165, 55, 252, 0.65);
     }
 }
 /*==============================================*/
@@ -65,3 +47,20 @@ body{
     }
 }
 /*=========================*/
+
+
+/*about-us*/
+.about-us-top{
+    background: #AF8BCA;
+}
+
+.about-us-bottom{
+    background: #AF8BCA;
+}
+
+/*Иконка дискорда*/
+.report-problem__icon{
+    &:hover{
+        color: #9457EB;
+    }
+}

@@ -1,6 +1,5 @@
 @charset "UTF-8";
 .main {
-  background: #71607E;
   padding: 130px 0px 50px 0px;
 }
 
@@ -17,6 +16,8 @@
   background: #3A1F4F;
   border-radius: 4px;
   padding: 20px 30px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .about-us-top__title {
@@ -48,6 +49,8 @@
   border-radius: 4px;
   padding: 30px 40px;
   margin-top: 20px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .report-problem__title {
@@ -85,6 +88,8 @@
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
   display: block;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .report-problem__icon:hover {
   -webkit-transform: rotate(360deg) scale(1.5);
