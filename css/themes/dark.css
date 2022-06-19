@@ -6,10 +6,10 @@
 
 /*==============================================*/
 /*Меню*/
-.header__menu__item a {
+.header__menu a {
   color: #fff;
 }
-.header__menu__item a::after {
+.header__menu a::after {
   background: #fff;
 }
 
@@ -44,3 +44,9 @@
 }
 
 /*=================================================*/
+/*Бургер*/
+.burger span {
+  background: #fff;
+}
+
+/*=========================*/

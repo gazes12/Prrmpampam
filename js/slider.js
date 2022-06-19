@@ -1,38 +1,77 @@
-const slider = document.querySelector('.slider');
-const sliderLine = document.querySelector('.slider__line');
-const images = document.querySelectorAll('.slider__line img');
+window.addEventListener('DOMContentLoaded', () =>{
+    /*Компоненты слайдера*/
+    const slider = document.querySelector('.slider');
+    const sliderLine = document.querySelector('.slider__line');
+    const sliderItems = document.querySelectorAll('.slider__item');
 
-const arrowRight = document.querySelector('.slider__arrow-right');
-const arrowLeft = document.querySelector('.slider__arrow-left');
 
-let width = slider.offsetWidth;
-let count = 0;
+    /*Кнопки*/
+    const arrowNext = document.querySelector('.slider__arrow--next');
+    const arrowPrev =  document.querySelector('.slider__arrow--prev');
 
-window.addEventListener('resize', () =>{
-    sliderLine.style.width = width * images.length + 'px';
-    images.forEach(image => {
-        image.style.width = width + 'px';
-        image.style.height = 'auto';
+
+    /*Пустые переменные*/
+    let transform = 0;
+
+    /*Вычисления*/
+    let widthSliderItem = 0;
+    sliderItems.forEach(sliderItem =>{
+        widthSliderItem = sliderItem.offsetWidth;
     });
+
+    /*Проверка на устройства*/
+    if(window.outerWidth < 815){
+        console.log('MOBILE');
+        /*Логика на телефоны*/
+        slider.onclick = () =>{
+            transform += widthSliderItem;
+            moveMobile();
+
+            function moveMobile(){
+                sliderLine.style.transform = `translateX(-${transform}px)`;
+                if(transform == widthSliderItem * sliderItems.length){
+                    transform = 0;
+                    sliderLine.style.transform = `translateX(-0px)`;
+                }
+            }
+        }
+    }else{
+        console.log('PC');
+        /*Логика на пк*/
+
+        /*Запуск функции, чтобы запустить логику кнопок*/
+        movePc();
+
+        arrowNext.onclick = () =>{
+            transform += widthSliderItem;
+            movePc();
+        }
+
+        arrowPrev.onclick = () =>{
+            transform -= widthSliderItem;
+            movePc();
+        }
+
+        function movePc(){
+            sliderLine.style.transform = `translateX(-${transform}px)`;   
+
+
+            /*Проверка на кнопки*/
+
+            /*Кнопка назад*/
+            if(transform == 0){
+                arrowPrev.classList.add('lock');
+            }else{
+                arrowPrev.classList.remove('lock');
+            } 
+
+            /*Кнопка вперед*/
+            if(transform == widthSliderItem * sliderItems.length - widthSliderItem){
+                arrowNext.classList.add('lock');
+            }else{
+                arrowNext.classList.remove('lock');
+            }
+
+        }
+    }
 });
-
-arrowLeft.onclick = () =>{
-    count++;
-    if(count == images.length){
-        count = 0;
-    }
-    start();
-}
-
-arrowRight.onclick = () =>{
-    count--;
-    if(count < 0){
-        count = images.length - 1;
-    }
-    start();
-}
-
-function start(){
-    sliderLine.style.transform = 'translateX(-' + count * width + 'px)';
-}
-
