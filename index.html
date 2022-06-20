@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" title="theme" href="css/themes/dark.css">
     <link rel="shortcut icon" href="img/Logo/icon.svg">
@@ -48,16 +49,24 @@
             <div class="about-us__container">
                 <div class="about-us__title">О нас</div>
                 <div class="about-us__sub-title">Делаем сайты.</div>
-                <div class="about-us__slider slider">
-                    <i class="fa-solid fa-arrow-right slider__arrow slider__arrow--next"></i>
-                    <div class="slider__wrap">
-                        <div class="slider__line">
-                            <div class="slider__item"><img src="img/about-us/slider/1.jpg" alt=""></div>
-                            <div class="slider__item"><img src="img/about-us/slider/2.jpg" alt=""></div>
-                            <div class="slider__item"><img src="img/about-us/slider/3.jpg" alt=""></div>
+
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-title">Slide1</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-title">Slide2</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-title">Slide3</div>
                         </div>
                     </div>
-                    <i class="fa-solid fa-arrow-left slider__arrow slider__arrow--prev"></i>
+
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-button swiper-button-prev"></div>
+                    <div class="swiper-button swiper-button-next"></div>
                 </div>
             </div>
         </section>
@@ -80,7 +89,7 @@
         </section> -->
 
     </main>
-
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/switcher.js"></script>
     <script src="js/burger.js"></script>
     <script src="js/slider.js"></script>

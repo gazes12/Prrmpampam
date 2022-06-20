@@ -53,3 +53,27 @@ body{
 .about-us{
     background: #B5A1C4;
 }
+
+
+/*Свайпер*/
+.swiper {
+    border-color: #EBD1FF;
+}
+
+.swiper-slide {
+    background: #EBD1FF;
+}
+
+.swiper-button{
+    background: #fff;
+    color: #000;
+
+    &:hover{
+        background: #EBD1FF;
+
+    }
+}
+
+.swiper-pagination-bullet{
+    background: #8a8092;
+}

@@ -50,3 +50,23 @@
 }
 
 /*=========================*/
+/*Свайпер*/
+.swiper {
+  border-color: #876F9A;
+}
+
+.swiper-slide {
+  background: #876F9A;
+}
+
+.swiper-button {
+  background: #000;
+  color: #fff;
+}
+.swiper-button:hover {
+  background: #876F9A;
+}
+
+.swiper-pagination-bullet {
+  background: #5d4a6c;
+}
