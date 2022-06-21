@@ -18,12 +18,10 @@
 
 /*==============================================*/
 /*Меню*/
-.header__menu {
-    a{
-        color: #fff;
-        &::after{
-            background: #fff;
-        }
+.menu__item a{
+    color: #fff;
+    &::after{
+        background: #fff;
     }
 }
 /*==============================================*/

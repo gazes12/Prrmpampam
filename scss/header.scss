@@ -54,32 +54,28 @@
     gap: 20px;
     text-align: center;
 }
-.menu__item {
-    a{
-        font-size: 18px;
-        color: #fff;
+.menu__item a{
+    font-size: 18px;
 
-        position: relative;
-        padding-bottom: 5px;
+    position: relative;
+    padding-bottom: 5px;
 
-        transition: all .3s ease-out;
+    transition: all .3s ease-out;
 
+    &::after{
+        content: '';
+        width: 0%;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        transition: all .3s linear;
+    }
+
+    &:hover{
         &::after{
-            content: '';
-            width: 0%;
-            height: 2px;
-            background: #fff;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-
-            transition: all .3s linear;
-        }
-
-        &:hover{
-            &::after{
-                width: 100%;
-            }
+            width: 100%;
         }
     }
 }

@@ -33,19 +33,22 @@ body{
 /*=================================================*/
 
 /*Menu*/
-.menu{
-    background: #fff;
+@media(max-width: 815px){
+    .menu{
+        background: #fff;
+    }
 }
 
 .menu__item a{
     color: #000;
+    &::after{
+        background: #000;
+    }
 }
 
 /*Бургер*/
-.burger{
-    span{
-        background: #000;
-    }
+.burger span{
+    background: #000;
 }
 /*=========================*/
 

@@ -19,10 +19,10 @@
 /*=============================*/
 /*==============================================*/
 /*Меню*/
-.header__menu a {
+.menu__item a {
   color: #fff;
 }
-.header__menu a::after {
+.menu__item a::after {
   background: #fff;
 }
 
