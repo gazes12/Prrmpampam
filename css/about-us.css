@@ -25,10 +25,10 @@
 
 .about-us {
   background: #71607E;
-  border-radius: 7px;
+  border-radius: 0.5rem;
   max-width: 80%;
   margin: 0 auto;
-  padding: 3.1rem 0;
+  padding: 2.1rem 0;
 }
 
 .about-us__container {
@@ -37,96 +37,14 @@
 }
 
 .about-us__title {
-  font-size: 3.1rem;
+  font-size: 3.2rem;
+}
+
+.about-us__title--ourWorks {
+  margin-top: 3.1rem;
 }
 
 .about-us__sub-title {
   font-size: 2.2rem;
-  padding-top: 0.6rem;
-}
-
-.swiper {
-  cursor: -webkit-grab;
-  cursor: grab;
-  border: 5px solid;
-  width: 100%;
-  border-radius: 1.5rem;
-  margin-top: 2.2rem;
-  position: relative;
-  padding-bottom: 55%;
-}
-.swiper:hover .swiper-button {
-  opacity: 1;
-  visibility: visible;
-}
-
-.swiper-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.swiper-slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 5px;
-}
-.swiper-slide img {
-  border-radius: 25px;
-}
-
-.slide-left {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 52%;
-          flex: 0 0 52%;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-}
-
-.slide-left__name-site {
-  font-size: 3.7rem;
-}
-
-.slide-left__description-site {
-  font-size: 1.8rem;
-  margin-top: 1.2rem;
-}
-
-.slide-left__button {
-  margin-top: 2.5rem;
-}
-
-.slide-right {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 45%;
-          flex: 0 0 45%;
-}
-
-.slide-right__images img {
-  max-width: 100%;
-}
-
-.swiper-button {
-  border-radius: 100%;
-  width: 48px;
-  height: 48px;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-.swiper-button::after {
-  font-size: 16px;
-  font-weight: 900;
-}
-.swiper-pagination-bullet {
-  width: 1rem;
-  height: 1rem;
+  padding-top: 1.2rem;
 }

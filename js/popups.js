@@ -11,5 +11,17 @@ close_popupCheckSiteContent.onclick = () =>{
 open_popupCheckSiteContent.forEach(btn =>{
     btn.onclick = () =>{
         popupCheckSiteContent.classList.add('active');
+
+        /*Добавление контента*/
+        const slideName = document.querySelector('.contentSite__name');
+        const slideDescription = document.querySelector('.contentSite__description');
+        const slideImage = document.querySelector('.contentSite__image');
+
+
+        slideName.innerText = btn.previousElementSibling.previousElementSibling.innerText;
+        slideDescription.innerText = btn.previousElementSibling.innerText;
     }
 });
+
+
+

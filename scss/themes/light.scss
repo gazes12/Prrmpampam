@@ -4,13 +4,16 @@ body{
 
 /*General Class*/
 .button{
-    font-size: 2rem;
-    display: inline-flex;
-
     background: #EB4C42;
-    border-radius: 1.5rem;
-    padding: 1.2rem 2.5rem;
     color: #fff;
+
+    &:hover{
+        background: #88241c;
+    }
+
+    &:active{
+        background: #4b110d;
+    }
 }
 
 /*=============================*/
@@ -74,7 +77,6 @@ body{
 
     &:hover{
         background: #EBD1FF;
-
     }
 }
 
@@ -85,4 +87,22 @@ body{
 
 .slide-left{
     color: #000;
+}
+
+/*Swiper2*/
+.swiper2 {
+    border-color: #fff;
+    .swiper-slide {
+        background: #fff;
+    }
+
+    .swiper-button{
+        &:hover{
+            background: #b3aaaa;
+        }
+    }
+
+    .swiper-pagination-bullet{
+        background: #b3aaaa;
+    }
 }
