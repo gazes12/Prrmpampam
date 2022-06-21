@@ -8,4 +8,11 @@ const swiper = new Swiper('.swiper', {
         el: '.swiper-pagination',
         clickable: true,
     },
+
+    autoplay: {
+        delay: 3000,
+    },
+
+    simulateTouch: false,
+    loop: true,
 });
