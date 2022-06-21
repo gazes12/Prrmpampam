@@ -1,5 +1,26 @@
 .main {
-  padding: 180px 0 30px 0;
+  font-size: 16px;
+  padding: 11.2em 0 1.9em 0;
+}
+@media (max-width: 911px) {
+  .main {
+    font-size: 14px;
+  }
+}
+@media (max-width: 815px) {
+  .main {
+    font-size: 12px;
+  }
+}
+@media (max-width: 555px) {
+  .main {
+    font-size: 10px;
+  }
+}
+@media (max-width: 355px) {
+  .main {
+    font-size: 8px;
+  }
 }
 
 .about-us {
@@ -7,7 +28,7 @@
   border-radius: 7px;
   max-width: 80%;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 3.1rem 0;
 }
 
 .about-us__container {
@@ -16,12 +37,12 @@
 }
 
 .about-us__title {
-  font-size: 50px;
+  font-size: 3.1rem;
 }
 
 .about-us__sub-title {
-  font-size: 35px;
-  padding-top: 10px;
+  font-size: 2.2rem;
+  padding-top: 0.6rem;
 }
 
 .swiper {
@@ -29,8 +50,8 @@
   cursor: grab;
   border: 5px solid;
   width: 100%;
-  border-radius: 25px;
-  margin-top: 35px;
+  border-radius: 1.5rem;
+  margin-top: 2.2rem;
   position: relative;
   padding-bottom: 55%;
 }
@@ -55,13 +76,41 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 5px;
 }
 .swiper-slide img {
   border-radius: 25px;
 }
 
-.swiper-slide-title {
-  font-size: 50px;
+.slide-left {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 52%;
+          flex: 0 0 52%;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.slide-left__name-site {
+  font-size: 3.7rem;
+}
+
+.slide-left__description-site {
+  font-size: 1.8rem;
+  margin-top: 1.2rem;
+}
+
+.slide-left__button {
+  margin-top: 2.5rem;
+}
+
+.slide-right {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 45%;
+          flex: 0 0 45%;
+}
+
+.slide-right__images img {
+  max-width: 100%;
 }
 
 .swiper-button {
@@ -78,73 +127,6 @@
   font-weight: 900;
 }
 .swiper-pagination-bullet {
-  width: 16px;
-  height: 16px;
-}
-
-@media (max-width: 815px) {
-  .about-us__title {
-    font-size: 35px;
-  }
-
-  .about-us__sub-title {
-    font-size: 20px;
-  }
-
-  .swiper {
-    margin-top: 25px;
-  }
-
-  .swiper-slide-title {
-    font-size: 35px;
-  }
-
-  .swiper-button {
-    width: 38px;
-    height: 38px;
-  }
-  .swiper-button::after {
-    font-size: 14px;
-  }
-
-  .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-  }
-}
-@media (max-width: 555px) {
-  .about-us__title {
-    font-size: 27px;
-  }
-
-  .about-us__sub-title {
-    font-size: 17px;
-  }
-
-  .swiper {
-    margin-top: 15px;
-    border: 3px solid;
-  }
-
-  .swiper-slide-title {
-    font-size: 25px;
-  }
-
-  .swiper-button {
-    width: 28px;
-    height: 28px;
-  }
-  .swiper-button::after {
-    font-size: 12px;
-  }
-
-  .swiper-pagination-bullet {
-    width: 8px;
-    height: 8px;
-  }
-}
-@media (max-width: 400px) {
-  .swiper-button {
-    display: none;
-  }
+  width: 1rem;
+  height: 1rem;
 }

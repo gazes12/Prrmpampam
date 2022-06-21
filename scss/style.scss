@@ -6,6 +6,8 @@
 @import url('../css/about-us.css');
 @import url('../css/connect-with-us.css');
 @import url('../css/footer.css');
+@import url('../css/popups.css');
+@import url('../css/generalClass.css');
 
 [class*='__container']{
     max-width: 1000px + 30px;
@@ -17,4 +19,29 @@ body{
     background: #12061C;
     font-family: 'Inter', sans-serif;
     transition: all .3s ease-out;
+}
+
+
+@media(max-width: 991px){
+    html{
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 815px){
+    html{
+        font-size: 8px;
+    }
+}
+
+@media(max-width: 555px){
+    html{
+        font-size: 6px;
+    }
+}
+
+@media(max-width: 355px){
+    html{
+        font-size: 4px;
+    }
 }

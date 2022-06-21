@@ -4,6 +4,19 @@
   background: #3A1F4F;
 }
 
+/*General Class*/
+.button {
+  font-size: 2rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background: #9CADBE;
+  border-radius: 1.5rem;
+  padding: 1.2rem 2.5rem;
+  color: #F0C63D;
+}
+
+/*=============================*/
 /*==============================================*/
 /*Меню*/
 .header__menu a {
@@ -69,4 +82,8 @@
 
 .swiper-pagination-bullet {
   background: #5d4a6c;
+}
+
+.slide-left {
+  color: #fff;
 }

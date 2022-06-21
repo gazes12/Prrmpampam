@@ -2,6 +2,20 @@
 .header {
     background: #3A1F4F;
 }
+
+/*General Class*/
+.button{
+    font-size: 2rem;
+    display: inline-flex;
+
+    background: #9CADBE;
+    border-radius: 1.5rem;
+    padding: 1.2rem 2.5rem;
+    color: #F0C63D;
+}
+
+/*=============================*/
+
 /*==============================================*/
 /*Меню*/
 .header__menu {
@@ -73,4 +87,8 @@
 
 .swiper-pagination-bullet{
     background: #5d4a6c;
+}
+
+.slide-left{
+    color: #fff;
 }

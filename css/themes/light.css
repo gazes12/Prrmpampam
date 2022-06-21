@@ -3,23 +3,22 @@ body {
   background: #EBD1FF;
 }
 
+/*General Class*/
+.button {
+  font-size: 2rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background: #EB4C42;
+  border-radius: 1.5rem;
+  padding: 1.2rem 2.5rem;
+  color: #fff;
+}
+
+/*=============================*/
 /*Шапка*/
 .header {
   background: #F0B3EF;
-}
-
-/*==============================================*/
-/*Меню*/
-@media (max-width: 815px) {
-  .header__menu {
-    background: #fff;
-  }
-}
-.header__menu__item a {
-  color: #A537FC;
-}
-.header__menu__item a::after {
-  background: #A537FC;
 }
 
 /*==============================================*/
@@ -63,4 +62,8 @@ body {
 
 .swiper-pagination-bullet {
   background: #8a8092;
+}
+
+.slide-left {
+  color: #000;
 }
