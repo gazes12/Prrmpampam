@@ -16,6 +16,10 @@ body{
     }
 }
 
+.background{
+    background: #B5A1C4;
+}
+
 /*=============================*/
 
 /*Шапка*/
@@ -54,12 +58,6 @@ body{
     background: #000;
 }
 /*=========================*/
-
-
-/*about-us*/
-.about-us{
-    background: #B5A1C4;
-}
 
 
 /*Свайпер*/
@@ -105,4 +103,10 @@ body{
     .swiper-pagination-bullet{
         background: #b3aaaa;
     }
+}
+
+
+/*connetct-with-us*/
+.connect-witch-us__icon{
+    color: #71607E;
 }

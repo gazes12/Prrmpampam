@@ -16,34 +16,22 @@
   background: #2e343b;
 }
 
-/*=============================*/
+.background {
+  background: #71607E;
+}
+
 /*==============================================*/
 /*Меню*/
+@media (max-width: 815px) {
+  .menu {
+    background: #000;
+  }
+}
 .menu__item a {
   color: #fff;
 }
 .menu__item a::after {
   background: #fff;
-}
-
-/*==============================================*/
-/*Кнопки*/
-.buttons-header__login {
-  border: 1px solid #A537FC;
-  color: #A537FC;
-}
-.buttons-header__login:hover {
-  -webkit-box-shadow: -2px -2px 100px -1px rgba(165, 55, 252, 0.65);
-          box-shadow: -2px -2px 100px -1px rgba(165, 55, 252, 0.65);
-}
-
-.buttons-header__register {
-  color: #fff;
-  background: #A537FC;
-}
-.buttons-header__register:hover {
-  -webkit-box-shadow: -2px -2px 100px -1px rgba(165, 55, 252, 0.65);
-          box-shadow: -2px -2px 100px -1px rgba(165, 55, 252, 0.65);
 }
 
 /*==============================================*/
@@ -100,4 +88,9 @@
 }
 .swiper2 .swiper-pagination-bullet {
   background: #b3aaaa;
+}
+
+/*connetct-with-us*/
+.connect-witch-us__icon {
+  color: #B5A1C4;
 }

@@ -15,6 +15,10 @@ body {
   background: #4b110d;
 }
 
+.background {
+  background: #B5A1C4;
+}
+
 /*=============================*/
 /*Шапка*/
 .header {
@@ -51,11 +55,6 @@ body {
 }
 
 /*=========================*/
-/*about-us*/
-.about-us {
-  background: #B5A1C4;
-}
-
 /*Свайпер*/
 .swiper {
   border-color: #EBD1FF;
@@ -93,4 +92,9 @@ body {
 }
 .swiper2 .swiper-pagination-bullet {
   background: #b3aaaa;
+}
+
+/*connetct-with-us*/
+.connect-witch-us__icon {
+  color: #71607E;
 }

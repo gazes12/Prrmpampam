@@ -1,3 +1,10 @@
+.background{
+    border-radius: 0.5rem;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .button{
     font-size: 2rem;
     display: inline-flex;
@@ -6,6 +13,11 @@
     padding: 1.4rem 2.7rem;
 
     transition: all .3s ease;
+}
+
+.title{
+    font-size: 3.6rem;
+    text-align: center;
 }
 
 
