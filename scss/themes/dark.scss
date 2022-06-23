@@ -101,3 +101,34 @@
 .connect-witch-us__icon{
     color: #B5A1C4;
 }
+
+
+/*ORDER*/
+.order-button{
+    background: #D5D5D5;
+    color: #0080FF;
+    &:hover{
+        -webkit-box-shadow: 3px 2px 14px 11px #fff; 
+        box-shadow: 3px 2px 14px 11px #fff;
+    }   
+}
+
+.order-button__line--left {
+    background: rgb(255,255,255);
+    background: linear-gradient(73deg, rgba(255,255,255,1) 30%, rgba(208,208,208,1) 70%);
+}
+
+.order-button__line--right {
+    background: rgb(208,208,208);
+    background: linear-gradient(73deg, rgba(208,208,208,1) 30%, rgba(255,255,255,1) 70%);
+}
+
+.order-button__line--top {
+    background: rgb(208,208,208);
+    background: linear-gradient(73deg, rgba(208,208,208,1) 30%, rgba(255,255,255,1) 70%);
+}
+
+.order-button__line--bottom {
+    background: rgb(255,255,255);
+    background: linear-gradient(73deg, rgba(255,255,255,1) 30%, rgba(208,208,208,1) 70%);
+}

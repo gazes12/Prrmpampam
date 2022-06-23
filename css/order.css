@@ -1,0 +1,93 @@
+@charset "UTF-8";
+.order {
+  margin-top: 3rem;
+  padding: 4rem 0;
+}
+
+.order__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.order-button {
+  border-radius: 12px;
+  padding: 22px 67px;
+  font-size: 48px;
+  width: 50%;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.order-button:hover {
+  -webkit-box-shadow: 3px 2px 14px 11px #C731D5;
+  box-shadow: 3px 2px 14px 11px #C731D5;
+}
+.order-button:hover .order-button__line--left {
+  left: 90%;
+}
+.order-button:hover .order-button__line--right {
+  right: 90%;
+}
+.order-button:hover .order-button__line--top {
+  top: 90%;
+}
+.order-button:hover .order-button__line--bottom {
+  bottom: 90%;
+}
+.order-button:hover::after {
+  top: 30%;
+}
+.order-button::after {
+  content: "Заказать";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.order-button__line {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  height: 100%;
+  width: 50%;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+.order-button__line--left {
+  left: -100%;
+  top: 0;
+}
+
+.order-button__line--right {
+  right: -100%;
+  top: 0;
+}
+
+.order-button__line--top {
+  top: -100%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.order-button__line--bottom {
+  bottom: -100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
