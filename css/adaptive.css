@@ -136,7 +136,7 @@
 
   /*Меню*/
   .menu__list {
-    font-size: 16px !important;
+    font-size: 14px !important;
   }
 
   /*Логотип*/
@@ -162,6 +162,6 @@
 
   /*Меню*/
   .menu__list {
-    font-size: 14px !important;
+    font-size: 12px !important;
   }
 }
