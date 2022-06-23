@@ -25,12 +25,16 @@ body {
 }
 
 /*Меню*/
-.menu {
-  background: #fff;
+@media (max-width: 992px) {
+  .menu {
+    background: #fff;
+  }
 }
-
 .menu__item a {
   color: #000;
+}
+.menu__item a::after {
+  background: #000;
 }
 
 .burger span {

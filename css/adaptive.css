@@ -1,14 +1,5 @@
 @charset "UTF-8";
 @media (max-width: 1200px) {
-  /*Логотип*/
-  .logo-header__icon {
-    width: 70px !important;
-  }
-
-  .logo-header__text {
-    width: 135px !important;
-  }
-
   /*Кнопки*/
   .buttons-header {
     font-size: 11px !important;
@@ -20,6 +11,7 @@
     -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
+    font-size: 15px !important;
   }
 
   /*Бургер*/
@@ -72,7 +64,7 @@
   }
   .menu .menu__list {
     display: block;
-    font-size: 22px;
+    font-size: 18px;
   }
   .menu .menu__item {
     margin-bottom: 2.5em;
@@ -89,6 +81,10 @@
   }
 
   /*Логотип*/
+  .logo-header {
+    font-size: 12px !important;
+  }
+
   .logo-header__text {
     display: none !important;
   }
@@ -136,23 +132,18 @@
 
   /*Меню*/
   .menu__list {
-    font-size: 14px !important;
+    font-size: 12px !important;
   }
 
   /*Логотип*/
-  .logo-header__icon {
-    width: 60px !important;
+  .logo-header {
+    font-size: 10px !important;
   }
 }
 @media (max-width: 320px) {
   /*Шапка*/
   .header__container {
     height: 70px !important;
-  }
-
-  /*Логотип*/
-  .logo-header__icon {
-    width: 40px !important;
   }
 
   /*Кнопки*/
