@@ -19,13 +19,25 @@ body {
   background: #B5A1C4;
 }
 
-/*=============================*/
 /*Шапка*/
 .header {
   background: #F0B3EF;
 }
 
-/*==============================================*/
+/*Меню*/
+.menu {
+  background: #fff;
+}
+
+.menu__item a {
+  color: #000;
+}
+
+.burger span {
+  background: #000;
+}
+
+/*=============================*/
 /*SWITCHER*/
 .change-theme[data-theme=dark] {
   display: block;
@@ -36,25 +48,6 @@ body {
 }
 
 /*=================================================*/
-/*Menu*/
-@media (max-width: 815px) {
-  .menu {
-    background: #fff;
-  }
-}
-.menu__item a {
-  color: #000;
-}
-.menu__item a::after {
-  background: #000;
-}
-
-/*Бургер*/
-.burger span {
-  background: #000;
-}
-
-/*=========================*/
 /*Свайпер*/
 .swiper {
   border-color: #EBD1FF;

@@ -20,7 +20,7 @@ if(activeTheme === null){
 
 const windowWidth = window.innerWidth;
 const menuList = document.querySelector('.menu__list');
-if(windowWidth < 815){
+if(windowWidth < 992){
     const theme = document.querySelector('.theme');
     menuList.append(theme);
 }else{

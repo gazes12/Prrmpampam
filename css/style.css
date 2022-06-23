@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 @import url("../css/all.css");
+@import url("../css/adaptive.css");
 @import url("../css/reset.css");
 @import url("../css/header.css");
 @import url("../css/about-us.css");
@@ -21,22 +22,22 @@ body {
   transition: all 0.3s ease-out;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   html {
     font-size: 10px;
   }
 }
-@media (max-width: 815px) {
+@media (max-width: 768px) {
   html {
     font-size: 8px;
   }
 }
-@media (max-width: 555px) {
+@media (max-width: 480px) {
   html {
     font-size: 6px;
   }
 }
-@media (max-width: 355px) {
+@media (max-width: 320px) {
   html {
     font-size: 4px;
   }

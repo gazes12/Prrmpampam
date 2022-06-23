@@ -1,9 +1,4 @@
 @charset "UTF-8";
-/*Шапка*/
-.header {
-  background: #3A1F4F;
-}
-
 /*General Class*/
 .button {
   background: #9CADBE;
@@ -20,17 +15,21 @@
   background: #71607E;
 }
 
-/*==============================================*/
-/*Меню*/
-@media (max-width: 815px) {
-  .menu {
-    background: #000;
-  }
+/*Шапка*/
+.header {
+  background: #3A1F4F;
 }
+
+/*Меню*/
+.menu {
+  background: #000;
+}
+
 .menu__item a {
   color: #fff;
 }
-.menu__item a::after {
+
+.burger span {
   background: #fff;
 }
 
@@ -45,12 +44,6 @@
 }
 
 /*=================================================*/
-/*Бургер*/
-.burger span {
-  background: #fff;
-}
-
-/*=========================*/
 /*Свайпер*/
 .swiper {
   border-color: #876F9A;

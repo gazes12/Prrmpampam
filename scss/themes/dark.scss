@@ -1,8 +1,3 @@
-/*Шапка*/
-.header {
-    background: #3A1F4F;
-}
-
 /*General Class*/
 .button{
     background: #9CADBE;
@@ -21,29 +16,28 @@
     background: #71607E;
 }
 
-/*==============================================*/
+/*Шапка*/
+.header{
+    background: #3A1F4F;
+}
 
 /*Меню*/
-
-@media(max-width: 815px){
-    .menu{
-        background: #000;
-    }
+.menu{
+    background: #000;
 }
 
 .menu__item a{
     color: #fff;
-    &::after{
-        background: #fff;
-    }
 }
+
+.burger span{
+    background: #fff;
+}
+
+
 /*==============================================*/
 
-
 /*SWITCHER*/
-.theme {
-}
-
 .change-theme[data-theme="dark"]{
     display: none;
 }
@@ -52,14 +46,6 @@
     display: block;
 }
 /*=================================================*/
-
-/*Бургер*/
-.burger{
-    span{
-        background: #fff;
-    }
-}
-/*=========================*/
 
 /*Свайпер*/
 .swiper {

@@ -20,14 +20,25 @@ body{
     background: #B5A1C4;
 }
 
-/*=============================*/
-
 /*Шапка*/
-.header {
+.header{
     background: #F0B3EF;
 }
 
-/*==============================================*/
+/*Меню*/
+.menu{
+    background: #fff;
+}
+
+.menu__item a{
+    color: #000;
+}
+
+.burger span{
+    background: #000;
+}
+
+/*=============================*/
 
 /*SWITCHER*/
 .change-theme[data-theme="dark"]{
@@ -38,26 +49,6 @@ body{
     display: none;
 }
 /*=================================================*/
-
-/*Menu*/
-@media(max-width: 815px){
-    .menu{
-        background: #fff;
-    }
-}
-
-.menu__item a{
-    color: #000;
-    &::after{
-        background: #000;
-    }
-}
-
-/*Бургер*/
-.burger span{
-    background: #000;
-}
-/*=========================*/
 
 
 /*Свайпер*/
