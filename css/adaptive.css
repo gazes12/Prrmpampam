@@ -82,6 +82,10 @@
 }
 @media (max-width: 768px) {
   /*Шапка*/
+  .header.scrolledHeader .header__container {
+    height: 65px !important;
+  }
+
   .header__container {
     gap: 25px !important;
     height: 100px !important;
@@ -125,6 +129,10 @@
 }
 @media (max-width: 480px) {
   /*Шапка*/
+  .header.scrolledHeader .header__container {
+    height: 45px !important;
+  }
+
   .header__container {
     height: 80px !important;
   }
@@ -156,6 +164,10 @@
 }
 @media (max-width: 320px) {
   /*Шапка*/
+  .header.scrolledHeader .header__container {
+    height: 35px !important;
+  }
+
   .header__container {
     height: 70px !important;
   }
