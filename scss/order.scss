@@ -91,3 +91,40 @@
     left: 50%;
     transform: translateX(-50%);
 }
+
+
+@media(max-width: 1200px){
+}
+
+
+@media(max-width: 992px){
+    .order-button{
+        padding: 22px 67px;
+        font-size: 35px;
+        height: 75px;
+    }
+}
+
+@media(max-width: 768px){
+    .order-button{
+        padding: 21px 40px;
+        font-size: 25px;
+        height: 60px;
+    }  
+}
+
+@media(max-width: 480px){
+    .order-button{
+        padding: 15px 30px;
+        font-size: 17px;
+        height: 43px;
+    }  
+}
+
+@media(max-width: 320px){
+    .order-button{
+        padding: 15px 10px;
+        font-size: 15px;
+        height: 38px;
+    }
+}

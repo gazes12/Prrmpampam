@@ -1,3 +1,12 @@
+<?php
+require 'php/comments.php';
+    if(empty($_POST['submit'])){
+        $info = [];
+        $query = $conn->query("SELECT * FROM `comments`");
+        $info = $query->fetchAll(PDO::FETCH_ASSOC);
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -125,6 +134,56 @@
 
                     <div class="order-button__text">Заказать</div>
                 </a>
+            </div>
+        </section>
+
+        <section id="comments" class="comments background">
+            <div class="comments__title title">Комментарии</div>
+
+            <?php
+                if(isset($_GET['error'])){
+                    ?>
+                        <div class="comments-result comments__error">
+                            <?php
+                                echo $_GET['error'];
+                            ?>    
+                        </div>
+                    <?php
+                }else if(isset($_GET['succ'])){
+                    ?>
+                        <div class="comments-result comments__succ">
+                            <?php
+                                echo 'Ваш комментарий добавлен!';
+                            ?>    
+                        </div>
+                    <?php                                
+                }
+            ?>
+
+            <div class="create-comments__container">
+                <div class="create-comments">
+                    <form method="post" action="php/comments.php" class="create-comments__form">
+                    <input type="text" placeholder="Имя" class="create-comments__input" name="name" value="<?= $_COOKIE['name'] ?>">
+                        <input type="text" placeholder="Фамилия" class="create-comments__input" name="surname" value="<?= $_COOKIE['surname'] ?>">
+                        <input type="text" placeholder="Сообщение" class="create-comments__input" name="message" value="<?= $_COOKIE['message'] ?>">
+
+                        <input type="submit" name="submit" class="create-comments__button"> 
+                    </form>                   
+                </div>
+            </div>
+
+            <div class="comments__container">
+                <div  class="comments__body">
+                    <?php foreach($info as $data): ?>
+                        <div class="comments__item">
+                            <div class="comments__people">
+                                <div class="comments__name"><?= $data['name']?></div>
+                                <div class="comments__surname"><?= $data['surname']?></div>
+                            </div>
+                            <div class="comments__message"><?= $data['message']?></div>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
             </div>
         </section>
 

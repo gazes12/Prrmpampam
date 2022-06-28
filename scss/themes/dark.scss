@@ -19,6 +19,9 @@
 /*Шапка*/
 .header{
     background: #3A1F4F;
+    &.scrolledHeader{
+        box-shadow: 0px 3px 14px 14px rgba(39,21,53);
+    }
 }
 
 /*Меню*/
@@ -131,4 +134,16 @@
 .order-button__line--bottom {
     background: rgb(255,255,255);
     background: linear-gradient(73deg, rgba(255,255,255,1) 30%, rgba(208,208,208,1) 70%);
+}
+
+
+
+/*Комментарии*/
+.item-comments {
+    color: #fff;
+}
+
+
+.item-comments__message {
+    background: #000;
 }

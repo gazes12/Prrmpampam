@@ -10,6 +10,12 @@
 @import url("../css/footer.css");
 @import url("../css/popups.css");
 @import url("../css/generalClass.css");
+@import url("../css/comments.css");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 [class*=__container] {
   max-width: 1030px;
   padding: 0 15px;

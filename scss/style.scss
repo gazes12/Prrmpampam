@@ -11,6 +11,11 @@
 @import url('../css/footer.css');
 @import url('../css/popups.css');
 @import url('../css/generalClass.css');
+@import url('../css/comments.css');
+
+*{
+    box-sizing: border-box;
+}
 
 [class*='__container']{
     max-width: 1000px + 30px;
